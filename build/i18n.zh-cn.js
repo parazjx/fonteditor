@@ -43,5 +43,6 @@ module.exports = exports = {
     confirm: '确定',
     cancel: '取消',
     fontinfo: '字体信息',
+    adjust_all: '调整所有',
     syncfromserver: '从服务器同步字体'
 };

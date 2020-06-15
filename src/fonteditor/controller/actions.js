@@ -286,6 +286,23 @@ actions = {
         }
     },
 
+    'setting-adjust-all'() {
+        let ttf = program.ttfManager.get();
+        if (ttf) {
+            let SettingAdjustAll = settingSupport.adjustAll;
+            !new SettingAdjustAll({
+                onChange(setting) {
+                    program.ttfManager.adjustAllGlyfPos(setting);
+                    if (program.editor.isVisible()) {
+                        program.fire('function', {
+                            keyCode: 113
+                        });
+                    }
+                }
+            }).show($.extend({}, ttf['OS/2'], ttf.hhea, ttf.post));
+        }
+    },
+
     'setting-glyf-name'() {
         if (program.ttfManager.get()) {
             if (window.confirm(i18n.lang.msg_confirm_gen_names)) {

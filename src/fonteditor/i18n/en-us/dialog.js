@@ -48,6 +48,10 @@ export default {
     dialog_generage_name: 'Generate Glyph Name',
 
     dialog_metrics: 'Metrics',
+    dialog_adjust_all: 'Adjust All',
+    dialog_adjust_all_x: 'X Offset',
+    dialog_adjust_all_y: 'Y Offset',
+    dialog_adjust_all_tips: 'Adjust all glyfs position',
 
     dialog_import_and_export: 'Import and Export',
 

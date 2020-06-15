@@ -7,6 +7,7 @@ import unicode from '../dialog/setting-unicode';
 import name from '../dialog/setting-name';
 import adjustpos from '../dialog/setting-adjust-pos';
 import adjustglyf from '../dialog/setting-adjust-glyf';
+import adjustAll from '../dialog/setting-adjust-all';
 import metrics from '../dialog/setting-metrics';
 import online from '../dialog/font-online';
 import url from '../dialog/font-url';
@@ -24,6 +25,7 @@ export default {
     'adjust-pos': adjustpos,
     'adjust-glyf': adjustglyf,
     metrics,
+    adjustAll,
     online,
     url,
     glyf,

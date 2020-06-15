@@ -8,6 +8,7 @@ import lang from 'common/lang';
 import History from 'editor/widget/History';
 import TTF from 'fonteditor-core/ttf/ttf';
 import string from 'fonteditor-core/ttf/util/string';
+import glyfAdjust from 'fonteditor-core/ttf/util/glyfAdjust';
 import transformGlyfContours from 'fonteditor-core/ttf/util/transformGlyfContours';
 import compound2simple from 'fonteditor-core/ttf/util/compound2simple';
 import observable from 'common/observable';
@@ -302,6 +303,26 @@ export default class Manager {
             });
             this.fireChange(true);
         }
+
+        return this;
+    }
+
+    /**
+     * 调整所有glyf位置
+     *
+     * @param {Array=} indexList 索引列表
+     * @param {Object} setting 选项
+     * @return {boolean}
+     */
+    adjustAllGlyfPos(setting) {
+
+        let x = setting.adjust_all_x;
+        let y = setting.adjust_all_y;
+        this.ttf.get().glyf.forEach(function (g) {
+            glyfAdjust(g, 1, 1, x, y);
+        });
+
+        this.fireChange(true);
 
         return this;
     }

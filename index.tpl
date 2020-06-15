@@ -67,6 +67,7 @@
                 <ul class="dropdown-menu" role="menu">
                     <li><a data-disabled="1" data-action="setting-name">${lang.fontinfo}</a></li>
                     <li><a data-disabled="1" data-action="setting-metrics">${lang.metrics}</a></li>
+                    <li><a data-disabled="1" data-action="setting-adjust-all">${lang.adjust_all}</a></li>
                     <li><a data-action="setting-editor">${lang.editor_setting}</a></li>
                     <li><a data-action="setting-import-and-export">${lang.import_and_export}</a></li>
                 </ul>
@@ -90,13 +91,6 @@
                 </ul>
             </div>
         </div>
-
-        <div class="switch-lang">
-            <a href="./index.html">中文</a> |
-            <a href="./index-en.html">English</a>
-        </div>
-        <a class="ico i-github forkme" href="https://github.com/ecomfe/fonteditor" target="_blank">Fork me on Github</a>
-        <a class="ico i-help userguide" href="https://kekee000.github.io/fonteditor-doc/" target="_blank">${lang.help}</a>
     </section>
 
     <section class="sidebar">
@@ -152,16 +146,6 @@
     <script src="./dep/hidpi-canvas.js"></script>
     <script>
         window.language = '${lang.lang}';
-    </script>
-
-    <script>
-    var _hmt = _hmt || [];
-    /baidu.com$/.test(location.hostname) && (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?65ce30cdeda584c416e39648915689f7";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
     </script>
 </body>
 </html>

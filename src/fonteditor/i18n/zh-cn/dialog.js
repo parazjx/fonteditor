@@ -47,6 +47,10 @@ export default {
     dialog_generage_name: '是否生成字形名称',
 
     dialog_metrics: '字体度量',
+    dialog_adjust_all: '调整所有',
+    dialog_adjust_all_x: '水平偏移',
+    dialog_adjust_all_y: '垂直偏移',
+    dialog_adjust_all_tips: '此处调整的是所有字符的偏移，用来纠正整体偏离baseline的情形',
 
     dialog_import_and_export: '导入和导出',
 

@@ -43,5 +43,6 @@ module.exports = exports = {
     confirm: 'Confirm',
     cancel: 'Cancel',
     fontinfo: 'Font Info',
+    adjust_all: 'Adjust All',
     syncfromserver: 'Sync Font From Server'
 };
